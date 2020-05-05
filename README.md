@@ -4,9 +4,13 @@
   * url: `https://raw.githubusercontent.com/rzzldzzl/Install-Splunk-UF-on-Databricks-Cluster/master/Install%20Splunk%20UF%20on%20Databricks%20Cluster.ipynb`
 * Set Variables (These can also be set in each Cluster's Environmnet Variables Config)
   * ufDlUrl=`"https://download.splunk.com/products/universalforwarder/releases/8.0.2.1/linux/splunkforwarder-8.0.2.1-f002026bad55-Linux-x86_64.tgz"`
+    * *URL of Splunk UF*
+    * *https://www.splunk.com/en_us/download/universal-forwarder.html*
   * ufDlDir=`"/dbfs/splunkUF"`
+    * *should be shared location accessible by both the driver and executors.*
   * ufInstallDir=`"/local_disk0"`
-  * ARGETURI=`"<FQDN of Splunk Deployment Server>:8089"`
+    * *driver/executor Splunk UF install dir*
+  * TARGETURI=`"<FQDN of Splunk Deployment Server>:8089"`
 * Execute ***Install Splunk UF on Databricks Cluster*** notebook to write `splunkUF-init.sh` init script.
 * Configure Splunk UF configs on Deployment Server - see examples
   * Indexing Tier
