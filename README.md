@@ -14,17 +14,17 @@
 * **Execute *Install Splunk UF on Databricks Cluster* notebook** to write `splunkUF-init.sh` init script.
 * **Configure Splunk UF configs on Deployment Server** - see examples
   * Indexing Tier
-    * [splunk_example_configs/idx/etc/apps/dbr/local/indexes.conf](splunk_example_configs/idx/etc/apps/dbr/local/indexes.conf)
+    * [etc/apps/dbr/local/indexes.conf](splunk_example_configs/idx/etc/apps/dbr/local/indexes.conf)
       * *create DBR specifc index*
-    * [splunk_example_configs/idx/etc/apps/dbr/local/props.conf](splunk_example_configs/idx/etc/apps/dbr/local/props.conf)
+    * [etc/apps/dbr/local/props.conf](splunk_example_configs/idx/etc/apps/dbr/local/props.conf)
       * *temporarily disable TRUNCATE*
-    * [splunk_example_configs/idx/etc/apps/dbr/local/inputs.conf](splunk_example_configs/idx/etc/apps/dbr/local/inputs.conf)
+    * [etc/apps/dbr/local/inputs.conf](splunk_example_configs/idx/etc/apps/dbr/local/inputs.conf)
       * *configure inputs*
   * Deployment Server
-    * [splunk_example_configs/ds/etc/deployment-apps/dbr/default/outputs.conf](splunk_example_configs/ds/etc/deployment-apps/dbr/default/outputs.conf)
+    * [etc/deployment-apps/dbr/default/outputs.conf](splunk_example_configs/ds/etc/deployment-apps/dbr/default/outputs.conf)
       * *configure outputs*
-    * [splunk_example_configs/ds/etc/deployment-apps/dbr/default/inputs.conf](splunk_example_configs/ds/etc/deployment-apps/dbr/default/inputs.conf)
+    * [etc/deployment-apps/dbr/default/inputs.conf](splunk_example_configs/ds/etc/deployment-apps/dbr/default/inputs.conf)
       * *configure inputs*
-    * [splunk_example_configs/ds/etc/apps/dbr/local/serverclass.conf](splunk_example_configs/ds/etc/apps/dbr/local/serverclass.conf)
+    * [etc/apps/dbr/local/serverclass.conf](splunk_example_configs/ds/etc/apps/dbr/local/serverclass.conf)
       * *configure serverclass*
 * **Configure Databricks cluster to run init script** `dbfs:/splunkUF/splunkUF-init.sh`
